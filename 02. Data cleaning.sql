@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS cyclistic.tripdata_cleaned
 CREATE TABLE cyclistic.tripdata_cleaned
 AS 
 (SELECT
