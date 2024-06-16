@@ -12,6 +12,10 @@
 ### Data Exploration
 After downloading six months' worth of trip data spanning from November 2023 to April 2024, the first step to examine the data is to combine them first. As the data consist of million of rows, I chose Google BigQuery's SQL tool for its capability to handle large volumes of data.
 
+### Data Analysis
+
+The full visualization of this analysis is created using Tableau and could be accessed [here.](https://public.tableau.com/views/Cyclisticcapstone_Vidya/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link)
+
 
 
 
