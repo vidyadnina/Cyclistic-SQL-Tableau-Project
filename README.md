@@ -45,13 +45,16 @@ After downloading six months' worth of trip data spanning from November 2023 to 
 
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/e5603071-7c89-4e4f-af8a-67e3c16a6579)
 
-   The maximum ride length seems to be correct, but there is minimum ride length. Going forward, we would treat rides with minimum ride length as outliers.
+   The maximum ride length seems to be correct, but there is negative minimum ride length. Going forward, we would treat rides with negative minimum ride length as outliers.
 
 
 
 ---
 
 ## Data Cleaning
+
+To get around BigQuery's limitations, I cleaned the data by creating a new table. Rows with nulls were already eliminated in a previous step, so I only needed to clean rows with negative ride length, and I also added a Day of Week colimn..
+![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/f3e93e20-ac8e-4bea-b3f8-9460444c4d85)
 
 
 
