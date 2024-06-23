@@ -90,12 +90,13 @@ The following graphs would be using this color code: light green for Casual Ride
     ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/faf557b2-a050-4689-84c6-1feefb940e6f)
 
 
-6. I checked if there are any routes that is commonly used by casual riders and members, by combining starting stations and ending stations and counting each unique routes, then ordering it by descending and limiting it to 10.
-   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/7a03a746-1041-46ee-bd01-a07573f066f0)
+6. To further observe the behaviors of casual riders and members, I checked for the most popular routes taken between both groups and the average ride lengths for aforementioned routes.
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/4facc270-7ebc-490d-9c1a-153e503ca494)
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/6bbeeea8-3194-4645-a50a-588500e9b5b8)
 
-   As the resulting maximum count is 1, there seem to be no similar behavior in the routes taken by casual riders and members.
 
-7. For future marketing purposes, I checked for the top 10 starting and ending stations  for both casual riders and members.
+
+8. For future marketing purposes, I also checked for the top 10 starting and ending stations  for both casual riders and members.
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/c728574f-fa7b-4499-b03a-5f56e9d547de)
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/f38148ac-0076-437a-aee8-9840ae6795d8)
 
