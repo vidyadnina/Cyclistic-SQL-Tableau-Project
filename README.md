@@ -23,6 +23,7 @@ After downloading six months' worth of trip data spanning from November 2023 to 
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/1e0bca5a-9581-4741-9979-847b64a2bce5)
 
    There were four columns with null values. We could go ahead and eliminate rows with nulls by creating a new table.
+   
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/dafc6dbe-be8a-49d1-b98a-61db9747fea7)
 
 3. Checked if there are any columns with typos.
