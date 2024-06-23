@@ -1,4 +1,4 @@
-# Google Capstone Project: Cyclistic 
+# Google Capstone Project: Cyclistic Trip Data Analysis
 
 ### Project summary:
 - Cyclistic is a company providing bike-sharing services.
