@@ -110,9 +110,10 @@ The following graphs would be using this color code: light green for Casual Ride
 Key takeaways:
 1. Both users prefer classic bikes to electric.
 2. While casual riders have less number of rides, on average they ride for longer than members by a difference of ~10 minutes.
-3. Cyclistic members ride more during weekdays, peaking on Tuesday - Thursday, while casual riders ride more during the weekends, peaking on Saturday.
-4. Both groups' number of rides show similar trends of spiking at 8 AM and 5 PM during Weekdays, and peaking at 2 PM during Weekends. These findings suggest that both groups use the service most for school or work during weekdays.
-5. The two groups have a significant difference in their most frequently used starting and ending stations.
+3. Cyclistic members ride more during weekdays, peaking on Tuesday - Thursday, while casual riders ride more during the weekends, peaking on Saturday. These findings suggest that casual riders ride more for leisure while current members ride more for school/work.
+4. Both groups' number of rides show similar trends of spiking at 8 AM and 5 PM during Weekdays, and peaking at 2 PM during Weekends. 
+5. When observing the top routes taken by both groups and their ride length, it reinforces the suggestion that casual riders mostly ride for leisure.
+6. The two groups have a significant difference in their most frequently used starting and ending stations.
    
 ## Recommendations
 *"How can Cyclistic use digital media to influence casual riders to become members?"*
