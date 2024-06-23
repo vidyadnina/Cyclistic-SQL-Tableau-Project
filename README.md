@@ -66,18 +66,35 @@ To get around BigQuery's limitations, I cleaned the data by creating a new table
 The full visualization of this analysis is created using Tableau and could be accessed [here.](https://public.tableau.com/views/Cyclisticcapstone_Vidya/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link)
 
 The following graphs would be using this color code: light green for Casual Riders and dark blue for Cyclistic Members.
+
 ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/bdde05ec-a7c6-4ed9-91f8-d7a07aaf3d40)
 
 
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/551d03fb-9122-4726-b1dc-a157edd8337f)
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/1a496b9c-fe8d-4a00-8217-cfd73a4347df)
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/31530fdd-8e33-4856-bda7-200bf7262406)
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/faf557b2-a050-4689-84c6-1feefb940e6f)
-1. I checked if there are any routes that is commonly used by casual riders and members, by combining starting stations and ending stations and counting each unique routes, then ordering it by descending and limiting it to 10.
+
+1. Member type distribution: 74.54% of riders are Cyclistic members and 25.46% are casual riders.
+
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/551d03fb-9122-4726-b1dc-a157edd8337f)
+
+3. Both casual riders and members show preference to classic bikes.
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/31530fdd-8e33-4856-bda7-200bf7262406)
+   
+4. While the minimum and maximum ride lengths are almost the same, casual riders on average ride for 10 minutes longer than members.
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/ce5bfb92-de20-4d87-aa0c-7392bc487032)
+
+5. Upon analyzing the number of rides taken by casual riders and members per day, it seems that Cyclistic members use the service more during weekdays, peaking on Tuesday - Thursday, while casual riders ride more during the weekends, peaking on Saturday.
+
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/1a496b9c-fe8d-4a00-8217-cfd73a4347df)
+
+6. Despite the trend difference for number of rides per day, both casual riders and members show similar behaviors if we're grouping the number of rides per hour on Weekdays and Weekends. Both groups' number of rides taken spiked at 8 AM and 5 PM during Weekdays, and peaked at 2 PM during Weekdays.
+  
+    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/faf557b2-a050-4689-84c6-1feefb940e6f)
+
+
+7. I checked if there are any routes that is commonly used by casual riders and members, by combining starting stations and ending stations and counting each unique routes, then ordering it by descending and limiting it to 10.
 ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/7a03a746-1041-46ee-bd01-a07573f066f0)
 As the resulting maximum count is 1, we can't rely on similarity between the routes taken by casual riders and members.
 
-2. As there is no similarity between routes, I checked if there are common starting
+2. As there is no similarity between routes, I checked if there are common starting end ending stations between casual riders and members. 
 
 ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/298a0530-64d1-4f01-ba5c-0760c027cf44)
 ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/2f4e12d9-0506-4a31-8538-e15023c6c404)
