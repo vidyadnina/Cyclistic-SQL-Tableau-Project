@@ -86,21 +86,42 @@ The following graphs would be using this color code: light green for Casual Ride
 4. Upon analyzing the number of rides taken by casual riders and members per day, it seems that Cyclistic members use the service more during weekdays, peaking on Tuesday - Thursday, while casual riders ride more during the weekends, peaking on Saturday.
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/1a496b9c-fe8d-4a00-8217-cfd73a4347df)
 
-5. Despite the trend difference for number of rides per day, both casual riders and members show similar behaviors if we're grouping the number of rides per hour on Weekdays and Weekends. Both groups' number of rides taken spiked at 8 AM and 5 PM during Weekdays, and peaked at 2 PM during Weekends.
+5. Despite the trend difference for number of rides per day, both casual riders and members show similar behaviors if we're grouping the number of rides per hour on Weekdays and Weekends. Both groups' number of rides spiked at 8 AM and 5 PM during Weekdays, and peaked at 2 PM during Weekends.
     ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/faf557b2-a050-4689-84c6-1feefb940e6f)
 
 
-8. I checked if there are any routes that is commonly used by casual riders and members, by combining starting stations and ending stations and counting each unique routes, then ordering it by descending and limiting it to 10.
+6. I checked if there are any routes that is commonly used by casual riders and members, by combining starting stations and ending stations and counting each unique routes, then ordering it by descending and limiting it to 10.
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/7a03a746-1041-46ee-bd01-a07573f066f0)
 
-   As the resulting maximum count is 1, we can't rely on similarity between the routes taken by casual riders and members.
+   As the resulting maximum count is 1, there seem to be no similar behavior in the routes taken by casual riders and members.
 
-9. As there is no similarity between routes, I checked if there are common starting end ending stations between casual riders and members. 
+7. For future marketing purposes, I checked for the top 10 starting and ending stations  for both casual riders and members.
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/c728574f-fa7b-4499-b03a-5f56e9d547de)
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/f38148ac-0076-437a-aee8-9840ae6795d8)
 
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/298a0530-64d1-4f01-ba5c-0760c027cf44)
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/2f4e12d9-0506-4a31-8538-e15023c6c404)
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/102f30c8-bed1-44a8-8d0a-697916c06cf9)
-![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/7b2e5aa2-d859-4fe8-9905-34ab0c1ea603)
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/73415393-52f8-4747-b257-23f558540559)
+   ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/d0b130b8-fde1-4fae-a87d-6d2297991820)
+
+
+## Conclusion
+*"How do annual members and casual riders use Cyclistic bikes differently?"*
+
+Key takeaways:
+1. Both users prefer classic bikes to electric.
+2. While casual riders have less number of rides, on average they ride for longer than members by a difference of ~10 minutes.
+3. Cyclistic members ride more during weekdays, peaking on Tuesday - Thursday, while casual riders ride more during the weekends, peaking on Saturday.
+4. Both groups' number of rides show similar trends of spiking at 8 AM and 5 PM during Weekdays, and peaking at 2 PM during Weekends. These findings suggest that both groups use the service most for school or work during weekdays.
+5. The two groups have a significant difference in their most frequently used starting and ending stations.
+   
+## Recommendations
+*"How can Cyclistic use digital media to influence casual riders to become members?"*
+1. Show classic bikes more when designing ads as there is a preference for the type.
+2. 
+
+
+
+
+   
 
 
 
