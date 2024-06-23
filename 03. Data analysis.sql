@@ -66,14 +66,14 @@ FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "casual"
 GROUP BY member_type,start_station_name
 ORDER BY count_start_c desc
-LIMIT 20;
+LIMIT 10;
 
 SELECT  member_type, end_station_name, count(*) as count_end_c
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "casual"
 GROUP BY member_type, end_station_name
 ORDER BY count_end_c desc
-LIMIT 20;
+LIMIT 10;
 
 --and then we also check for members
 SELECT  member_type, start_station_name, count(*) as count_start_m
@@ -81,14 +81,14 @@ FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "member"
 GROUP BY member_type, start_station_name
 ORDER BY count_start_m desc
-LIMIT 20;
+LIMIT 10;
 
 SELECT  member_type, end_station_name, count(*) as count_end_m
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "member"
 GROUP BY member_type, end_station_name
 ORDER BY count_end_m desc
-LIMIT 20;
+LIMIT 10;
 
 --check popular routes
 SELECT  start_station_name || ' to ' || end_station_name as route, count(*) as count_route_c
@@ -119,7 +119,8 @@ FROM    route_c
 INNER JOIN route_m
 USING   (route)
 GROUP BY route
-ORDER BY count_route desc;
+ORDER BY count_route desc
+limit 10;
 
 --this returns a value of 1, thus we can't rely on similarity between routes for analysis.
 
