@@ -61,47 +61,49 @@ ORDER BY count_bike_type desc;
 
 --checking what starting & end stations are most popular for both member types
 -- we check for start and end stations for casual members first
-SELECT  member_type, start_station_name, count(*) as count_start_c
+SELECT  member_type, start_station_name, count(*) as n_of_rides
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "casual"
 GROUP BY member_type,start_station_name
-ORDER BY count_start_c desc
+ORDER BY n_of_rides desc
 LIMIT 10;
 
-SELECT  member_type, end_station_name, count(*) as count_end_c
+SELECT  member_type, end_station_name, count(*) as n_of_rides
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "casual"
 GROUP BY member_type, end_station_name
-ORDER BY count_end_c desc
+ORDER BY n_of_rides desc
 LIMIT 10;
 
 --and then we also check for members
-SELECT  member_type, start_station_name, count(*) as count_start_m
+SELECT  member_type, start_station_name, count(*) as n_of_rides
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "member"
 GROUP BY member_type, start_station_name
-ORDER BY count_start_m desc
+ORDER BY n_of_rides desc
 LIMIT 10;
 
-SELECT  member_type, end_station_name, count(*) as count_end_m
+SELECT  member_type, end_station_name, count(*) as n_of_rides
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "member"
 GROUP BY member_type, end_station_name
-ORDER BY count_end_m desc
+ORDER BY n_of_rides desc
 LIMIT 10;
 
 --check popular routes
-SELECT  start_station_name || ' to ' || end_station_name as route, count(*) as count_route_c
+SELECT  start_station_name || ' to ' || end_station_name as route_casual, count(*) as n_of_rides,round(avg(ride_length_minutes)) as ride_length
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "casual"
-GROUP BY route
-ORDER BY count_route_c desc;
+GROUP BY route_casual
+ORDER BY n_of_rides desc
+limit 10;
 
-SELECT  start_station_name || ' to ' || end_station_name as route, count(*) as count_route_m
+SELECT  start_station_name || ' to ' || end_station_name as route_member, count(*) as n_of_rides,round(avg(ride_length_minutes)) as ride_length
 FROM    cyclistic.tripdata_cleaned
 WHERE   member_type = "member"
-GROUP BY route
-ORDER BY count_route_m desc;
+GROUP BY route_member
+ORDER BY n_of_rides desc
+limit 10;
 
 --check for same routes between casuals and members
 WITH  route_c AS
@@ -126,20 +128,20 @@ limit 10;
 
 --see if there's common popular start and end station between casual and members
 WITH  start_c AS
-      (SELECT start_station_name, count(*) as count_start_c, rank() over (order by count(start_station_name) desc) as rank_c
+      (SELECT start_station_name, count(*) as count_start_c,avg(ride_length_minutes) as ride_length_c, rank() over (order by count(start_station_name) desc) as rank_c
       FROM    cyclistic.tripdata_cleaned
       WHERE   member_type = "casual"
       GROUP BY start_station_name
       ORDER BY count_start_c desc
       LIMIT 20),
       start_m AS
-      (SELECT start_station_name, count(*) as count_start_m, rank() over (order by count(start_station_name) desc) as rank_m
+      (SELECT start_station_name, count(*) as count_start_m,avg(ride_length_minutes)as ride_length_m, rank() over (order by count(start_station_name) desc) as rank_m
       FROM    cyclistic.tripdata_cleaned
       WHERE   member_type = "member"
       GROUP BY start_station_name
       ORDER BY count_start_m desc
       LIMIT 20)
-SELECT  start_station_name, count_start_c, rank_c, count_start_m, rank_m
+SELECT  start_station_name, count_start_c, rank_c,start_c.ride_length_c, count_start_m, rank_m, start_m.ride_length_m
 FROM    start_c
 INNER JOIN start_m
 USING   (start_station_name);
