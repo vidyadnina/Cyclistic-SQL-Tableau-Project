@@ -103,7 +103,7 @@ The following graphs would be using this color code: light green for Casual Ride
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/73415393-52f8-4747-b257-23f558540559)
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/d0b130b8-fde1-4fae-a87d-6d2297991820)
 
-
+---
 ## Conclusion
 *"How do annual members and casual riders use Cyclistic bikes differently?"*
 
@@ -114,9 +114,12 @@ Key takeaways:
 4. Both groups' number of rides show similar trends of spiking at 8 AM and 5 PM during Weekdays, and peaking at 2 PM during Weekends. 
 5. When observing the top routes taken by both groups and their ride length, it reinforces the suggestion that casual riders mostly ride for leisure while members use the service more to ride to school/work.
 6. The two groups have a significant difference in their most frequently used starting and ending stations.
+
+---
    
 ## Recommendations
 *"Why would casual riders buy Cyclistic annual memberships?"*
+
 *"How can Cyclistic use digital media to influence casual riders to become members?"*
 1. Show classic bikes more when designing ads as there is a preference for the type.
 2. Create a promo specially designed to incentivize those who take long rides for leisure: for example, a membership package with discounts or rewards once riders have reached a certain number of ride length.
