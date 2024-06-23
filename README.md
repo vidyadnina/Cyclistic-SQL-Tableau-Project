@@ -85,7 +85,7 @@ The following graphs would be using this color code: light green for Casual Ride
 4. Upon analyzing the number of rides taken by casual riders and members per day, it seems that Cyclistic members use the service more during weekdays, peaking on Tuesday - Thursday, while casual riders ride more during the weekends, peaking on Saturday.
    ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/1a496b9c-fe8d-4a00-8217-cfd73a4347df)
 
-5. Despite the trend difference for number of rides per day, both casual riders and members show similar behaviors if we're grouping the number of rides per hour on Weekdays and Weekends. Both groups' number of rides taken spiked at 8 AM and 5 PM during Weekdays, and peaked at 2 PM during Weekdays.
+5. Despite the trend difference for number of rides per day, both casual riders and members show similar behaviors if we're grouping the number of rides per hour on Weekdays and Weekends. Both groups' number of rides taken spiked at 8 AM and 5 PM during Weekdays, and peaked at 2 PM during Weekends.
     ![image](https://github.com/vidyadnina/Cyclistic-capstone-project/assets/171537335/faf557b2-a050-4689-84c6-1feefb940e6f)
 
 
